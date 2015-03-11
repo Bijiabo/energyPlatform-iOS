@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A1A0121B1AAFDB5300BEE497 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0121A1AAFDB5300BEE497 /* AppDelegate.swift */; };
-		A1A0121D1AAFDB5300BEE497 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0121C1AAFDB5300BEE497 /* FirstViewController.swift */; };
-		A1A0121F1AAFDB5300BEE497 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0121E1AAFDB5300BEE497 /* SecondViewController.swift */; };
 		A1A012221AAFDB5300BEE497 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A012201AAFDB5300BEE497 /* Main.storyboard */; };
 		A1A012241AAFDB5300BEE497 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1A012231AAFDB5300BEE497 /* Images.xcassets */; };
 		A1A012271AAFDB5300BEE497 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1A012251AAFDB5300BEE497 /* LaunchScreen.xib */; };
 		A1A012331AAFDB5300BEE497 /* enengyPlatformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A012321AAFDB5300BEE497 /* enengyPlatformTests.swift */; };
+		A1A0123E1AAFE25400BEE497 /* myNodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0123D1AAFE25400BEE497 /* myNodesViewController.swift */; };
+		A1A0123F1AAFE25400BEE497 /* myNodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0123D1AAFE25400BEE497 /* myNodesViewController.swift */; };
+		A1A012451AB03AFA00BEE497 /* newsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A012441AB03AFA00BEE497 /* newsViewController.swift */; };
+		A1A012461AB03AFA00BEE497 /* newsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A012441AB03AFA00BEE497 /* newsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +32,14 @@
 		A1A012151AAFDB5300BEE497 /* enengyPlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = enengyPlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A012191AAFDB5300BEE497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1A0121A1AAFDB5300BEE497 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1A0121C1AAFDB5300BEE497 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		A1A0121E1AAFDB5300BEE497 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A1A012211AAFDB5300BEE497 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1A012231AAFDB5300BEE497 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A1A012261AAFDB5300BEE497 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A1A0122C1AAFDB5300BEE497 /* enengyPlatformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = enengyPlatformTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A012311AAFDB5300BEE497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1A012321AAFDB5300BEE497 /* enengyPlatformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enengyPlatformTests.swift; sourceTree = "<group>"; };
+		A1A0123D1AAFE25400BEE497 /* myNodesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = myNodesViewController.swift; path = viewController/myNodesViewController.swift; sourceTree = "<group>"; };
+		A1A012441AB03AFA00BEE497 /* newsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = newsViewController.swift; path = viewController/newsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		A1A0120C1AAFDB5300BEE497 = {
 			isa = PBXGroup;
 			children = (
+				A1A012401AB02DEB00BEE497 /* public */,
 				A1A012171AAFDB5300BEE497 /* enengyPlatform */,
 				A1A0122F1AAFDB5300BEE497 /* enengyPlatformTests */,
 				A1A012161AAFDB5300BEE497 /* Products */,
@@ -79,9 +82,8 @@
 		A1A012171AAFDB5300BEE497 /* enengyPlatform */ = {
 			isa = PBXGroup;
 			children = (
+				A1A0123C1AAFE20B00BEE497 /* viewController */,
 				A1A0121A1AAFDB5300BEE497 /* AppDelegate.swift */,
-				A1A0121C1AAFDB5300BEE497 /* FirstViewController.swift */,
-				A1A0121E1AAFDB5300BEE497 /* SecondViewController.swift */,
 				A1A012201AAFDB5300BEE497 /* Main.storyboard */,
 				A1A012231AAFDB5300BEE497 /* Images.xcassets */,
 				A1A012251AAFDB5300BEE497 /* LaunchScreen.xib */,
@@ -113,6 +115,23 @@
 				A1A012311AAFDB5300BEE497 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1A0123C1AAFE20B00BEE497 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				A1A0123D1AAFE25400BEE497 /* myNodesViewController.swift */,
+				A1A012441AB03AFA00BEE497 /* newsViewController.swift */,
+			);
+			name = viewController;
+			sourceTree = "<group>";
+		};
+		A1A012401AB02DEB00BEE497 /* public */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = public;
+			path = enengyPlatform;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1A0121F1AAFDB5300BEE497 /* SecondViewController.swift in Sources */,
+				A1A0123E1AAFE25400BEE497 /* myNodesViewController.swift in Sources */,
 				A1A0121B1AAFDB5300BEE497 /* AppDelegate.swift in Sources */,
-				A1A0121D1AAFDB5300BEE497 /* FirstViewController.swift in Sources */,
+				A1A012451AB03AFA00BEE497 /* newsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +244,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1A0123F1AAFE25400BEE497 /* myNodesViewController.swift in Sources */,
 				A1A012331AAFDB5300BEE497 /* enengyPlatformTests.swift in Sources */,
+				A1A012461AB03AFA00BEE497 /* newsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
