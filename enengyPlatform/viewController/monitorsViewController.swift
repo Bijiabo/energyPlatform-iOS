@@ -1,15 +1,15 @@
 //
-//  myNodesViewController.swift
+//  monitorsViewController.swift
 //  enengyPlatform
 //
-//  Created by bijiabo on 15/3/11.
+//  Created by bijiabo on 15/3/12.
 //  Copyright (c) 2015年 JYLabs. All rights reserved.
 //
 
 import UIKit
 import WebKit
 
-class myNodesViewController: UIViewController, WKNavigationDelegate, UINavigationBarDelegate{
+class monitorsViewController: UIViewController, WKNavigationDelegate, UINavigationBarDelegate{
   
   @IBOutlet var navigationBar: UINavigationBar!
   
@@ -21,7 +21,7 @@ class myNodesViewController: UIViewController, WKNavigationDelegate, UINavigatio
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    let handler = myNodesNotificationScriptMessageHandler(viewController: self)
+    let handler = monitorsNotificationScriptMessageHandler(viewController: self)
     userContentController = WKUserContentController()
     userContentController.addScriptMessageHandler(handler, name: "notification")
     
@@ -35,12 +35,11 @@ class myNodesViewController: UIViewController, WKNavigationDelegate, UINavigatio
     webView.navigationDelegate = self
     view.addSubview(webView)
     view.sendSubviewToBack(webView)
-    let url : NSURL! = NSURL(string: "\(hostDomain)/nodes")
+    let url : NSURL! = NSURL(string: "\(hostDomain)/monitors/ios/main")
     let req : NSURLRequest = NSURLRequest(URL: url)
     webView.loadRequest(req)
     
     view.bringSubviewToFront(navigationBar)
-    //navigationBar.pushNavigationItem(UINavigationItem(title: "dadada"), animated: true)
   }
   
   override func didReceiveMemoryWarning() {
@@ -48,20 +47,22 @@ class myNodesViewController: UIViewController, WKNavigationDelegate, UINavigatio
   }
   
   func navigationBar(navigationBar: UINavigationBar, shouldPopItem item: UINavigationItem) -> Bool {
-    
-    let source = "Router.go(\"nodesList\")"
+    println("navigation bar")
+    let source = "Router.go(\"newsList\")"
     
     webView.evaluateJavaScript(source, completionHandler: nil)
     
     return true
   }
+  
 }
 
-class myNodesNotificationScriptMessageHandler: NSObject, WKScriptMessageHandler
+
+class monitorsNotificationScriptMessageHandler: NSObject, WKScriptMessageHandler
 {
-  var vc : myNodesViewController!
+  var vc : monitorsViewController!
   
-  init(viewController : myNodesViewController) {
+  init(viewController : monitorsViewController) {
     vc = viewController
   }
   
@@ -94,3 +95,4 @@ class myNodesNotificationScriptMessageHandler: NSObject, WKScriptMessageHandler
   }
   
 }
+

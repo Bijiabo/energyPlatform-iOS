@@ -16,7 +16,7 @@ class newsViewController: UIViewController, WKNavigationDelegate, UINavigationBa
   var webView : WKWebView!
   var userContentController : WKUserContentController!
   var configuration : WKWebViewConfiguration!
-  var hostDomain : String = "http://localhost"
+  var hostDomain : String = "http://192.168.1.102"
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -46,6 +46,14 @@ class newsViewController: UIViewController, WKNavigationDelegate, UINavigationBa
     super.didReceiveMemoryWarning()
   }
   
+  func navigationBar(navigationBar: UINavigationBar, shouldPopItem item: UINavigationItem) -> Bool {
+    println("navigation bar")
+    let source = "Router.go(\"newsList\")"
+    
+    webView.evaluateJavaScript(source, completionHandler: nil)
+    
+    return true
+  }
 }
 
 class newsNotificationScriptMessageHandler: NSObject, WKScriptMessageHandler
@@ -65,7 +73,10 @@ class newsNotificationScriptMessageHandler: NSObject, WKScriptMessageHandler
       switch action
       {
       case "pushNavigationItem":
-        vc.navigationBar.pushNavigationItem(UINavigationItem(title: message.body["title"] as String!), animated: true)
+        if vc.navigationBar.items.count<2
+        {
+          vc.navigationBar.pushNavigationItem(UINavigationItem(title: message.body["title"] as String!), animated: true)
+        }
         
       case "popNavigationItemAnimated":
         if vc.navigationBar.items.count>1

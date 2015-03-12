@@ -66,6 +66,9 @@
                                 <items>
                                     <navigationItem title="数据新闻" id="VgK-t4-2Fp"/>
                                 </items>
+                                <connections>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="MQ2-xu-exb"/>
+                                </connections>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -87,7 +90,7 @@
         <!--全网监控-->
         <scene sceneID="OZ3-J1-iug">
             <objects>
-                <viewController id="b37-xn-v3w" sceneMemberID="viewController">
+                <viewController id="b37-xn-v3w" customClass="monitorsViewController" customModule="enengyPlatform" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="t2k-nP-ML7"/>
                         <viewControllerLayoutGuide type="bottom" id="jTo-bu-gzm"/>
@@ -95,9 +98,31 @@
                     <view key="view" contentMode="scaleToFill" id="VHm-h1-OuB">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yXh-CP-2GM">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="jDa-kN-Rmr"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="全网监控" id="vvj-EO-AzZ"/>
+                                </items>
+                                <connections>
+                                    <outlet property="delegate" destination="b37-xn-v3w" id="BSP-Rr-ujJ"/>
+                                </connections>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="yXh-CP-2GM" secondAttribute="trailing" constant="-16" id="5YM-vq-V3c"/>
+                            <constraint firstItem="yXh-CP-2GM" firstAttribute="top" secondItem="VHm-h1-OuB" secondAttribute="topMargin" id="ewB-Ym-ca4"/>
+                            <constraint firstItem="yXh-CP-2GM" firstAttribute="leading" secondItem="VHm-h1-OuB" secondAttribute="leadingMargin" constant="-16" id="tR0-ie-VNq"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="全网监控" image="first" id="amA-DO-jMr"/>
+                    <connections>
+                        <outlet property="navigationBar" destination="yXh-CP-2GM" id="1Df-Lf-GzO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FLD-T3-XNt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
