@@ -18,6 +18,10 @@
 		A1A012461AB03AFA00BEE497 /* newsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A012441AB03AFA00BEE497 /* newsViewController.swift */; };
 		A1A012481AB1775C00BEE497 /* monitorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A012471AB1775C00BEE497 /* monitorsViewController.swift */; };
 		A1A012491AB1775D00BEE497 /* monitorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A012471AB1775C00BEE497 /* monitorsViewController.swift */; };
+		A1A0124B1AB1C6EE00BEE497 /* webkitNotificationScriptMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0124A1AB1C6EE00BEE497 /* webkitNotificationScriptMessageHandler.swift */; };
+		A1A0124C1AB1C6EE00BEE497 /* webkitNotificationScriptMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0124A1AB1C6EE00BEE497 /* webkitNotificationScriptMessageHandler.swift */; };
+		A1A0124E1AB1C78300BEE497 /* webkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0124D1AB1C78300BEE497 /* webkitViewController.swift */; };
+		A1A0124F1AB1C78300BEE497 /* webkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0124D1AB1C78300BEE497 /* webkitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,8 @@
 		A1A0123D1AAFE25400BEE497 /* myNodesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = myNodesViewController.swift; path = viewController/myNodesViewController.swift; sourceTree = "<group>"; };
 		A1A012441AB03AFA00BEE497 /* newsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = newsViewController.swift; path = viewController/newsViewController.swift; sourceTree = "<group>"; };
 		A1A012471AB1775C00BEE497 /* monitorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = monitorsViewController.swift; path = viewController/monitorsViewController.swift; sourceTree = "<group>"; };
+		A1A0124A1AB1C6EE00BEE497 /* webkitNotificationScriptMessageHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = webkitNotificationScriptMessageHandler.swift; path = public/webkitNotificationScriptMessageHandler.swift; sourceTree = "<group>"; };
+		A1A0124D1AB1C78300BEE497 /* webkitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = webkitViewController.swift; path = public/webkitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,8 @@
 		A1A012401AB02DEB00BEE497 /* public */ = {
 			isa = PBXGroup;
 			children = (
+				A1A0124A1AB1C6EE00BEE497 /* webkitNotificationScriptMessageHandler.swift */,
+				A1A0124D1AB1C78300BEE497 /* webkitViewController.swift */,
 			);
 			name = public;
 			path = enengyPlatform;
@@ -241,6 +249,8 @@
 				A1A0123E1AAFE25400BEE497 /* myNodesViewController.swift in Sources */,
 				A1A012481AB1775C00BEE497 /* monitorsViewController.swift in Sources */,
 				A1A0121B1AAFDB5300BEE497 /* AppDelegate.swift in Sources */,
+				A1A0124B1AB1C6EE00BEE497 /* webkitNotificationScriptMessageHandler.swift in Sources */,
+				A1A0124E1AB1C78300BEE497 /* webkitViewController.swift in Sources */,
 				A1A012451AB03AFA00BEE497 /* newsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +262,8 @@
 				A1A0123F1AAFE25400BEE497 /* myNodesViewController.swift in Sources */,
 				A1A012491AB1775D00BEE497 /* monitorsViewController.swift in Sources */,
 				A1A012331AAFDB5300BEE497 /* enengyPlatformTests.swift in Sources */,
+				A1A0124C1AB1C6EE00BEE497 /* webkitNotificationScriptMessageHandler.swift in Sources */,
+				A1A0124F1AB1C78300BEE497 /* webkitViewController.swift in Sources */,
 				A1A012461AB03AFA00BEE497 /* newsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

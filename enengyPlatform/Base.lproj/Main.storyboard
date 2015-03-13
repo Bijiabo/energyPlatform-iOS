@@ -39,7 +39,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="我的节点" image="first" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="navigationBar" destination="nU0-Fz-abi" id="Ztu-OD-zqp"/>
+                        <outlet property="navigationbar" destination="nU0-Fz-abi" id="HPZ-O5-CfQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -80,7 +80,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="数据新闻" image="second" id="cPa-gy-q4n"/>
                     <connections>
-                        <outlet property="navigationBar" destination="vhi-9S-EA6" id="AyC-Bz-YKX"/>
+                        <outlet property="navigationbar" destination="vhi-9S-EA6" id="zgn-6w-UJZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -105,7 +105,13 @@
                                     <constraint firstAttribute="height" constant="64" id="jDa-kN-Rmr"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title="全网监控" id="vvj-EO-AzZ"/>
+                                    <navigationItem title="全网监控" id="vvj-EO-AzZ">
+                                        <barButtonItem key="rightBarButtonItem" title="节点列表" id="dVP-jx-vLZ">
+                                            <connections>
+                                                <action selector="clickNodesListButton:" destination="b37-xn-v3w" id="Bxk-NK-ryh"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                                 <connections>
                                     <outlet property="delegate" destination="b37-xn-v3w" id="BSP-Rr-ujJ"/>
@@ -121,7 +127,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="全网监控" image="first" id="amA-DO-jMr"/>
                     <connections>
-                        <outlet property="navigationBar" destination="yXh-CP-2GM" id="1Df-Lf-GzO"/>
+                        <outlet property="navigationbar" destination="yXh-CP-2GM" id="7hv-7Z-lXw"/>
+                        <outlet property="nodesListButton" destination="dVP-jx-vLZ" id="K11-JS-oep"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FLD-T3-XNt" userLabel="First Responder" sceneMemberID="firstResponder"/>
